@@ -1,0 +1,40 @@
+.footer {
+  display: flex;
+  background-color: #f5b23e;
+  border-radius: 30px;
+  margin: 10px 15px 30px 15px;
+}
+.footerLogo {
+  display: flex;
+  flex: 1;
+  padding: 30px 55px 30px 55px;
+}
+
+.footerButton {
+  flex: 2;
+  display: flex;
+  align-items: center;
+}
+
+.footerYear {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footerButtonlinks {
+  display: flex;
+  gap: 100px;
+}
+.footerYear,
+.footerNumber,
+.footerService,
+.footerOurWorks {
+  color: #393737;
+}
+
+:root {
+  --toastify-color-progress-success: #ebeaea !important; /* Цвет прогресса */
+  --toastify-icon-color-success: #ffcc00 !important;
+}

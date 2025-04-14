@@ -1,0 +1,112 @@
+.ourWorks {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 15px;
+}
+
+.ourWorksLeftCards,
+.ourWorksRightCards {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 15px;
+}
+
+.ourWorksCard {
+  height: 27%;
+  background-color: #252323;
+  border-radius: 30px;
+  padding: 20px;
+}
+
+.ourWorksCardTitle {
+  width: fit-content;
+  border-radius: 30px;
+  padding: 10px 20px;
+  background: #f5b23e;
+  color: #393737;
+}
+
+.ourWorksCardDiscription {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24.2px;
+  letter-spacing: -3%;
+  padding-top: 20px;
+}
+
+.ourWorksFootway {
+  height: 73%;
+  border-radius: 30px;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../../../../public/image/our_works/footwayjpg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.ourWorkCenterCard {
+  height: 878px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #393737;
+  border-radius: 20px;
+  width: 33%;
+}
+.ourWorkRoadsText,
+.ourWorkReconstructionText,
+.ourWorkFootwayText,
+.ourWorkCenterCardText {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: flex-end;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+}
+
+.ourWorkReconstructionCardTitle,
+.ourWorkRoadsCardTitle,
+.ourWorkFootwayTitle,
+.ourWorkCenterCardTitle {
+  text-transform: uppercase;
+  font-size: 40px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.ourWorkButton {
+  background-color: #ebeaea;
+  color: #393737;
+  width: 40%;
+}
+
+.ourWorkCenterCard {
+  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+    url("../../../../public/image/our_works/asphalt.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.ourWorkRoadsCard {
+  display: flex;
+  flex: 1;
+  border-radius: 30px;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../../../../public/image/our_works/road.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.ourWorkReconstructionCard {
+  display: flex;
+  flex: 1;
+  border-radius: 30px;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../../../../public/image/our_works/reconstructions.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}

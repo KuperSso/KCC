@@ -1,0 +1,81 @@
+.price {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 15px;
+}
+
+.priceText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0px 50px 0px 50px;
+}
+
+.priceTitle {
+  color: #393737;
+  font-size: 65px;
+}
+
+.priceCards {
+  display: flex;
+  gap: 15px;
+}
+
+.priceReconstruction,
+.priceRoad,
+.priceFootway {
+  flex: 1;
+  position: relative;
+  display: flex;
+  background-color: #393737;
+  border-radius: 30px;
+  padding: 20px;
+  flex-direction: column;
+  width: 33%;
+}
+
+.priceLabel {
+  width: fit-content;
+  border-radius: 30px;
+  padding: 10px 20px;
+  background: #f5b23e;
+  color: #393737;
+}
+
+.priceCardTitle {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  padding: 50px 0px 50px 0px;
+}
+
+p::before {
+  content: "• ";
+  font-size: 20px;
+}
+
+.priceCardDescriptionTitle {
+  padding: 0px 0px 20px 0px;
+  font-size: 21px;
+}
+
+.priceCardDescriptionText {
+  padding: 0px 0px 100px 0px;
+}
+
+.priceButton {
+  width: "fill-available";
+  width: "100%";
+  text-align: center;
+  background: #f5b23e;
+  color: #393737;
+  border-radius: 30px;
+  padding: 10px;
+  transition: all 0.5s ease;
+}
+
+.priceButton:hover {
+  background-color: rgb(248, 187, 81, 0.7);
+}
