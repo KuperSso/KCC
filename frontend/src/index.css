@@ -61,3 +61,38 @@ a {
 .p-carousel-items-content {
   border-radius: 30px;
 }
+
+@media (max-width: 768px) {
+  body {
+    margin: 0px;
+  }
+  .body {
+    margin: 0px 20px;
+  }
+
+  .p-sidebar-mask {
+    height: 100vh !important;
+  }
+  .p-button:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  .p-sidebar-header {
+    background-color: #393737 !important;
+  }
+  svg.p-icon {
+    color: #f5b23e !important;
+  }
+  svg.p-icon:hover {
+    color: #393737 !important;
+  }
+  .p-sidebar-icon {
+    background-color: none !important;
+  }
+  .p-sidebar-content {
+    padding: 0px !important;
+  }
+  .p-sidebar-icon:hover {
+    background-color: #f5b23e !important;
+  }
+}

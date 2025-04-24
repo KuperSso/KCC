@@ -36,7 +36,7 @@
   justify-content: space-between;
   width: 100%;
   color: #393737;
-  gap: 88px;
+  gap: 80px;
 }
 
 .cardsUp {
@@ -57,7 +57,7 @@
 }
 
 .cardsDown {
-  width: 40%;
+  width: 60%;
   padding: 0px 0px 10px 20px;
 }
 
@@ -86,5 +86,35 @@
 @media screen and (max-width: 400px) {
   .textInvest {
     font-size: 2.5rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .сards {
+    gap: 30px;
+  }
+  .cardsDown {
+    width: 100%;
+  }
+  .reviewsTitle {
+    font-size: 46px;
+  }
+  .reviewsDescription {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .сards {
+    gap: 30px;
+  }
+  .cardsDown {
+    width: 100%;
+  }
+  .reviewsTitle {
+    font-size: 46px;
+  }
+  .reviewsDescription {
+    font-size: 20px;
   }
 }

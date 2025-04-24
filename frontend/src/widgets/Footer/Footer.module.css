@@ -3,11 +3,16 @@
   background-color: #f5b23e;
   border-radius: 30px;
   margin: 10px 15px 30px 15px;
+  flex-direction: column;
 }
+.footerUpBlock {
+  display: flex;
+}
+
 .footerLogo {
   display: flex;
   flex: 1;
-  padding: 30px 55px 30px 55px;
+  padding: 30px 0px 0px 55px;
 }
 
 .footerButton {
@@ -21,11 +26,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-bottom: 10px;
 }
 
 .footerButtonlinks {
   display: flex;
-  gap: 100px;
+  gap: 80px;
+  white-space: nowrap;
 }
 .footerYear,
 .footerNumber,
@@ -35,6 +42,50 @@
 }
 
 :root {
-  --toastify-color-progress-success: #ebeaea !important; /* Цвет прогресса */
+  --toastify-color-progress-success: #ebeaea !important;
   --toastify-icon-color-success: #ffcc00 !important;
+}
+
+a {
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footerUpBlock {
+    display: flex;
+  }
+
+  .footerLogo {
+    display: flex;
+    align-items: center;
+    padding: 0px 30px 0px 0px;
+  }
+
+  .footerButton {
+    display: flex;
+    padding-top: 20px;
+  }
+
+  .footerButtonlinks {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .footerYear {
+    order: 3;
+    margin-top: 20px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .footerLogo {
+    padding: 30px 30px 0px 55px;
+  }
 }

@@ -11,6 +11,7 @@
   flex-direction: column;
   flex: 1;
   gap: 15px;
+  width: 33%;
 }
 
 .ourWorksCard {
@@ -74,14 +75,13 @@
 .ourWorkCenterCardTitle {
   text-transform: uppercase;
   font-size: 40px;
-  word-wrap: break-word;
   overflow-wrap: break-word;
 }
 
 .ourWorkButton {
   background-color: #ebeaea;
   color: #393737;
-  width: 40%;
+  width: 20vh;
 }
 
 .ourWorkCenterCard {
@@ -109,4 +109,84 @@
     url("../../../../public/image/our_works/reconstructions.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+  .ourWorksLeftCards,
+  .ourWorksRightCards {
+    width: 100%;
+  }
+  .ourWorksFootway {
+    height: 70vh;
+  }
+
+  .ourWorks {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ourWorkButton {
+    width: 50%;
+  }
+
+  .ourWorkCenterCard {
+    height: 70vh;
+    display: flex;
+    flex: none;
+    width: 100%;
+  }
+
+  .ourWorkReconstructionCard,
+  .ourWorkRoadsCard {
+    display: flex;
+    flex: none;
+    height: 70vh;
+  }
+
+  .ourWorkReconstructionCardTitle,
+  .ourWorkRoadsCardTitle,
+  .ourWorkFootwayTitle,
+  .ourWorkCenterCardTitle {
+    font-size: 34px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .ourWorksLeftCards,
+  .ourWorksRightCards {
+    width: 100%;
+  }
+  .ourWorksFootway {
+    height: 70vh;
+  }
+
+  .ourWorks {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ourWorkButton {
+    width: 50%;
+  }
+
+  .ourWorkCenterCard {
+    height: 70vh;
+    display: flex;
+    flex: none;
+    width: 100%;
+  }
+
+  .ourWorkReconstructionCard,
+  .ourWorkRoadsCard {
+    display: flex;
+    flex: none;
+    height: 70vh;
+  }
+
+  .ourWorkReconstructionCardTitle,
+  .ourWorkRoadsCardTitle,
+  .ourWorkFootwayTitle,
+  .ourWorkCenterCardTitle {
+    font-size: 34px;
+  }
 }

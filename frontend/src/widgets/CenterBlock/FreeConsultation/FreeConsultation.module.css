@@ -71,3 +71,49 @@
   border-color: #f5b23e;
   outline: none;
 }
+
+@media (max-width: 768px) {
+  .freeConsultationTitle {
+    padding-bottom: 10px;
+  }
+
+  .freeConsultationUnderTitle {
+    padding: 0px 0px 40px 0px;
+  }
+
+  .freeConsultationForm {
+    margin: 30px;
+  }
+
+  .freeConsultation {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .customInput {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .freeConsultationTitle {
+    padding-bottom: 10px;
+  }
+
+  .freeConsultationUnderTitle {
+    padding: 0px 0px 40px 0px;
+  }
+
+  .freeConsultationForm {
+    margin: 30px;
+  }
+
+  .freeConsultation {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .customInput {
+    width: 100%;
+  }
+}

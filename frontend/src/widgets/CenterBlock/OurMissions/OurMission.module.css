@@ -28,7 +28,6 @@
 .ourMissionsUpBlockText {
   font-weight: 500;
   font-size: 48px;
-  letter-spacing: -3px;
   line-height: 1;
 }
 
@@ -100,4 +99,42 @@
 
 .ourMissionsCenterBlockButtonCall:hover {
   background-color: rgb(248, 187, 81, 0.7);
+}
+
+@media (max-width: 768px) {
+  .ourMissionsUpBlock {
+    margin-top: 50px;
+    gap: 70px;
+  }
+
+  .ourMissionsDownBlock {
+    gap: 70px;
+  }
+
+  .ourMissionsUpBlockText {
+    font-size: 34px;
+  }
+
+  .ourMissionsCenterBlock {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ourMissionsCenterBlockCenterSqueares {
+    display: flex;
+    flex: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .ourMissionsCenterBlockCenterSqueares {
+    display: flex;
+    flex: none;
+    width: 100%;
+  }
+
+  .ourMissionsCenterBlock {
+    display: flex;
+    flex-direction: column;
+  }
 }

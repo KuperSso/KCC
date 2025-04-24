@@ -1,44 +1,26 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { Sidebar } from "primereact/sidebar";
 import { Button } from "primereact/button";
 import styles from "./Banner.module.css";
 
 const Banner = () => {
-  const scrollToSection = () => {
-    const element = document.getElementById("FreeConsultation");
+  const [sidebarVisible, setSidebarVisible] = useState(false);
+  const customHeader = (
+    <div className={`${styles.headerTitleSidebar}`}>
+      <b>КУБ СПЕЦ СТРОЙ</b>
+    </div>
+  );
+  const handleScrollAndCloseSidebar = (sectionId) => {
+    const element = document.getElementById(sectionId);
     if (element) {
       window.scrollTo({ top: element.offsetTop, behavior: "smooth" });
     }
+    setSidebarVisible(false);
   };
-  const scrollToSectionWorks = () => {
-    const element = document.getElementById("Works");
-    if (element) {
-      window.scrollTo({ top: element.offsetTop, behavior: "smooth" });
-    }
-  };
-  const scrollToSectionService = () => {
-    const elementWorks = document.getElementById("Price");
-    if (elementWorks) {
-      window.scrollTo({ top: elementWorks.offsetTop, behavior: "smooth" });
-    }
-  };
-  const scrollToSectionReviews = () => {
-    const elementWorks = document.getElementById("Reviews");
-    if (elementWorks) {
-      window.scrollTo({ top: elementWorks.offsetTop, behavior: "smooth" });
-    }
-  };
-  const scrollToSectionOurMissions = () => {
-    const elementWorks = document.getElementById("ourMission");
-    if (elementWorks) {
-      window.scrollTo({ top: elementWorks.offsetTop, behavior: "smooth" });
-    }
-  };
-
   return (
     <header className={`${styles.header}`}>
       <div className={`${styles.banner}`}>
-        <div className={`${styles.headerInput}`}>
+        <div className={`${styles.headerDesktop}`}>
           <a href="/" className={`${styles.headerLogo}`}>
             <img
               src="image/main/logo.svg"
@@ -48,25 +30,25 @@ const Banner = () => {
           </a>
           <div className={`${styles.headerLinks}`}>
             <a
-              onClick={scrollToSectionOurMissions}
+              onClick={() => handleScrollAndCloseSidebar("ourMission")}
               className={`${styles.headerLinksButton} cursor-pointer`}
             >
               О нас
             </a>
             <a
-              onClick={scrollToSectionWorks}
+              onClick={() => handleScrollAndCloseSidebar("Works")}
               className={`${styles.headerLinksButton} cursor-pointer`}
             >
               Работы
             </a>
             <a
-              onClick={scrollToSectionService}
+              onClick={() => handleScrollAndCloseSidebar("Price")}
               className={`${styles.headerLinksButton} cursor-pointer`}
             >
               Услуги
             </a>
             <a
-              onClick={scrollToSectionReviews}
+              onClick={() => handleScrollAndCloseSidebar("Reviews")}
               className={`${styles.headerLinksButton} cursor-pointer`}
             >
               Отзывы
@@ -74,13 +56,67 @@ const Banner = () => {
           </div>
           <div className={`${styles.headerButtonCall}`}>
             <a
-              onClick={scrollToSection}
+              onClick={() => handleScrollAndCloseSidebar("FreeConsultation")}
               className={`${styles.headerButtonCallCollor} cursor-pointer`}
             >
               Заказать звонок
             </a>
           </div>
+          <div className={`${styles.sidebarButton}`}>
+            <Sidebar
+              header={customHeader}
+              className={`${styles.sidebarOpen}`}
+              position="right"
+              visible={sidebarVisible}
+              onHide={() => setSidebarVisible(false)}
+            >
+              <div className={`${styles.sidebar}`}>
+                <div className={`${styles.headerLinksSidebar}`}>
+                  <a
+                    onClick={() => handleScrollAndCloseSidebar("ourMission")}
+                    className={`${styles.headerLinksButtonSidebar} cursor-pointer`}
+                  >
+                    О нас
+                  </a>
+                  <a
+                    onClick={() => handleScrollAndCloseSidebar("Works")}
+                    className={`${styles.headerLinksButtonSidebar} cursor-pointer`}
+                  >
+                    Работы
+                  </a>
+                  <a
+                    onClick={() => handleScrollAndCloseSidebar("Price")}
+                    className={`${styles.headerLinksButtonSidebar} cursor-pointer`}
+                  >
+                    Услуги
+                  </a>
+                  <a
+                    onClick={() => handleScrollAndCloseSidebar("Reviews")}
+                    className={`${styles.headerLinksButtonSidebar} cursor-pointer`}
+                  >
+                    Отзывы
+                  </a>
+                </div>
+                <div className={`${styles.headerButtonCallSidebar}`}>
+                  <a
+                    onClick={() =>
+                      handleScrollAndCloseSidebar("FreeConsultation")
+                    }
+                    className={`${styles.headerButtonCallCollorSidebar} cursor-pointer`}
+                  >
+                    Заказать звонок
+                  </a>
+                </div>
+              </div>
+            </Sidebar>
+            <Button
+              className={`${styles.bannerButtonMobile}`}
+              icon="pi pi-bars"
+              onClick={() => setSidebarVisible(true)}
+            />
+          </div>
         </div>
+
         <div className={`${styles.textBanner}`}>
           Строим дороги,
           <br />

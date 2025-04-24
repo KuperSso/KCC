@@ -53,6 +53,8 @@ const FreeConsultation = () => {
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
               placeholder="+7 (999) 000-00-00"
+              autoClear={false}
+              alwaysShowMask={true}
             ></InputMask>
           </div>
           <div>

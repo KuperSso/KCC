@@ -142,7 +142,7 @@ const OurWorks = () => {
               className={`${styles.ourWorkDialog}`}
               header={products.name}
               visible={visible}
-              style={{ width: "50vw" }}
+              style={{ width: "90vw", maxWidth: "700px" }}
               onHide={() => {
                 if (!visible) return;
                 setVisible(false);
