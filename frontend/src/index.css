@@ -91,6 +91,8 @@ a {
   }
   .p-sidebar-content {
     padding: 0px !important;
+    height: 50vh !important;
+    bottom: 0 !important;
   }
   .p-sidebar-icon:hover {
     background-color: #f5b23e !important;

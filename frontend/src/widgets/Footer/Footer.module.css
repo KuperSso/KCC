@@ -63,8 +63,7 @@ a {
 
   .footerLogo {
     display: flex;
-    align-items: center;
-    padding: 0px 30px 0px 0px;
+    padding: 70px 30px 0px 0px;
   }
 
   .footerButton {

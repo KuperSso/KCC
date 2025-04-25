@@ -85,10 +85,10 @@ const Reviews = () => {
           spaceBetween={20}
           breakpoints={{
             0: {
-              slidesPerView: 1, // для мобилок
+              slidesPerView: 1,
             },
             768: {
-              slidesPerView: 2, // планшеты и выше
+              slidesPerView: 2,
             },
           }}
         >
